@@ -1,0 +1,69 @@
+# ============================================================
+# UNIVERSAL .gitignore — purge_build_artifacts_v1
+# Class cure for build-artifact/derived-cache pollution
+# Per architect 2026-06-03: "thousands of artifacts that's violations"
+# Composes vince_8 no_duplicate_authority — one template, every repo.
+# ============================================================
+
+# --- Rust ---
+target/
+**/target/
+*.rmeta
+*.rlib
+*.rcgu.o
+*.rust-incremental
+Cargo.lock.bak
+
+# --- Python ---
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.tox/
+.venv/
+venv/
+*.egg-info/
+.coverage
+
+# --- C/C++ build outputs ---
+*.o
+*.obj
+*.pdb
+*.dSYM/
+*.gch
+
+# --- JS/Node ---
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+*.tsbuildinfo
+
+# --- Java ---
+*.class
+*.jar.bak
+
+# --- OS detritus ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- Editor swaps ---
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# --- VCS spool transients ---
+.git/index.lock
+MASTER/engine/spool/locks/
+MASTER/engine/spool/transient_emit/*.yaml
+
+# --- Build/CI cache ---
+*.log
+*.bak.*
