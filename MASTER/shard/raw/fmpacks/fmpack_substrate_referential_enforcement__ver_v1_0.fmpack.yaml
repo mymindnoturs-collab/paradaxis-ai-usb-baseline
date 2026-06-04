@@ -1,0 +1,110 @@
+name: fmpack_substrate_referential_enforcement__ver_v1_0
+description: |
+  Formalizes the substrate's unique structural-referential-enforcement property.
+  Mainstream software has symbolic references (link-time binding, version pinning,
+  recompile to swap). Paradaxis has STRUCTURAL references (reference IS structure):
+  - Anchors immutable forever (R66 pack-truth-supreme)
+  - Filename grammar carries version inline (R20)
+  - FMpack loads at runtime not link time (R24)
+  - Cwd determines branch (chunk_76 sub_law_7)
+  - Pack record IS the truth (R66)
+  Result: ANY def from ANY version of ANY skill/code/rule pullable AT ANY TIME
+  via 4 resolution modes (anchor / name / filename / version_ordinal / branch).
+  No recompile. No link-time binding. No dep resolver. No version conflict.
+
+tier: external
+
+property_codified: structural_referential_enforcement
+
+ruling_doctrines:
+  - anchor: 1225323305913811047
+    name: R20_filename_authority_first_instruction_set
+  - anchor: 1225323353158451303
+    name: R22_unbounded_facet_density
+  - anchor: 1225323400403091559
+    name: R24_universal_harness_fmpack_cartridge
+  - anchor: 1225323486302437479
+    name: R30_cross_shard_replication
+  - anchor: 1225323988813611111
+    name: R54_one_monad_law
+  - anchor: 1225329254443516007
+    name: chunk_76_15_sub_laws_including_drop_and_play_relative_addressing
+
+comparison_with_mainstream:
+  mainstream:
+    - python_import_binds_at_link_time
+    - npm_pins_version_in_lockfile
+    - cargo_lock_freezes_resolution
+    - cant_compose_two_versions_of_same_lib
+    - recompile_to_swap_dep
+  paradaxis:
+    - anchor_id_immutable_forever_per_R66
+    - filename_grammar_carries_version_inline_per_R20
+    - fmpack_loaded_at_runtime_not_link_time_per_R24
+    - cwd_IS_branch_per_chunk_76_sub_law_7
+    - pack_record_IS_truth_per_R66
+    - cross_chunk_compose_proven_chunk_98
+  empirical_diff:
+    - mainstream_cant_pull_chunk_94_def_into_chunk_95_running_process_no_recompile
+    - paradaxis_does_so_via_importlib_runtime_load_PROVEN_chunk_98
+
+4_resolution_modes:
+  by_anchor:
+    method: grep pack.json for anchor_id
+    immutable_per: R66
+  by_name:
+    method: grep pack.json for name regex
+  by_filename:
+    method: walk filesystem for R20 grammar match
+    first_instruction_set_per: R20
+  by_version_ordinal:
+    method: walk MASTER/versions/ordinal_NNN
+    canonical_per: R7_5_2
+  by_branch:
+    method: walk baseline tree
+    drop_and_play_per: chunk_76_sub_law_7
+
+members:
+  - path: MASTER/engine/drivers/_chunk_98_build/referential_resolver_v1.py
+    role: 4_mode_def_resolver
+  - path: MASTER/engine/drivers/_chunk_98_build/cross_version_compose_proof_v1.py
+    role: runtime_compose_proof_chunks_94_95_97
+  - path: MASTER/engine/drivers/_chunk_97_build/audit_lens_field_v1.py
+    role: substrate_self_audit_lenses
+  - path: MASTER/engine/drivers/_chunk_97_build/juxta_facet_engine_v1.py
+    role: facet_engine_R22_native
+  - path: MASTER/engine/drivers/_chunk_94_build/definitions_vs_rules_classifier_v2_unbounded.py
+    role: classifier_unbounded_pattern_root
+
+rules_forever:
+  - rule_ref_1_anchors_immutable:
+      law: any anchor_id once minted is permanent reference to its byte sequence
+      cure_on_violation: never_renumber_anchors_per_R66
+  - rule_ref_2_filename_carries_version:
+      law: filename includes role + version + ordinal inline per R20
+      cure_on_violation: rename_to_R20_grammar
+  - rule_ref_3_fmpack_runtime_load:
+      law: behaviors load via fmpack manifest plus pyz at runtime
+      cure_on_violation: convert_loose_py_to_fmpack_bundle_per_R23
+  - rule_ref_4_cwd_IS_branch:
+      law: cwd determines which baseline branch is active
+      cure_on_violation: replace_absolute_paths_with_relative_per_chunk_76_sub_law_7
+  - rule_ref_5_compose_any_version:
+      law: importlib runtime load means any chunk N def composes with any chunk M def
+      cure_on_violation: never_pin_versions_in_top_level_code_use_anchors_or_filenames
+
+empirical_proofs:
+  chunk_98_referential_resolver_self_test_PASS: true
+  chunk_98_cross_version_compose_4_primitives_chunks_94_95_97_PROVEN: true
+  no_recompile_property_preserved: true
+  no_link_time_binding: true
+  no_version_conflict_observed: true
+
+mainstream_systems_this_supersedes:
+  - python_import_system
+  - npm_package_lock
+  - cargo_lock_file
+  - go_modules
+  - maven_central_dep_resolver
+  - bazel_BUILD_files
+  - all_link_time_dependency_managers
