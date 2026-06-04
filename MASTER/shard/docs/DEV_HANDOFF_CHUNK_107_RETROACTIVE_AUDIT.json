@@ -1,0 +1,153 @@
+{
+  "manifest_kind": "dev_handoff_retroactive_chunk_audit",
+  "audit_module": "retroactive_chunk_audit_via_story_extractor_v1",
+  "chunks_audited": 8,
+  "total_tech_names_findable_across_chunks": 128,
+  "total_elapsed_ms": 2908.97,
+  "per_chunk_audits": [
+    {
+      "chunk": "chunk_98",
+      "topic": "instant link discovery anchor reference shard index",
+      "what_chunk_built": "referential_resolver_v1",
+      "should_have_composed": "associate_v1.py (shard_index instant link discovery)",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 385.82,
+      "audit_elapsed_ms": 387.47
+    },
+    {
+      "chunk": "chunk_99",
+      "topic": "ai inference runtime cognition pipeline pack traversal",
+      "what_chunk_built": "paradaxis_lm_runtime_v1 (5-stage cognition pipeline)",
+      "should_have_composed": "engine_ai_inference_full_runtime.exe + vince brain fmpack",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 381.28,
+      "audit_elapsed_ms": 382.69
+    },
+    {
+      "chunk": "chunk_100",
+      "topic": "starburst mask quorum validate truth burden",
+      "what_chunk_built": "starburst_mask_with_quorum + pre_emit_text_audit",
+      "should_have_composed": "burden_symmetry_gate + vince truth matrix v7",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 375.35,
+      "audit_elapsed_ms": 376.94
+    },
+    {
+      "chunk": "chunk_101",
+      "topic": "story mode bidirectional juxta phases generate output",
+      "what_chunk_built": "paradaxis_story_mode_1000_token_v1 (5-phase)",
+      "should_have_composed": "P_juxtareader_starburst_n_ray_unbounded (chunk_45 D2) + story_mode_levels doctrine",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 347.72,
+      "audit_elapsed_ms": 351.1
+    },
+    {
+      "chunk": "chunk_102",
+      "topic": "story mode unbounded phases register prose smoothing",
+      "what_chunk_built": "story_mode_v2_unbounded_phases + ollama comparison",
+      "should_have_composed": "P_juxtaengineering_micro_monad_form_function_reading_framework",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 357.6,
+      "audit_elapsed_ms": 361.42
+    },
+    {
+      "chunk": "chunk_103",
+      "topic": "general knowledge photosynthesis wordnet wiktionary conceptnet",
+      "what_chunk_built": "neutral test framework",
+      "should_have_composed": "absorb_wordnet_glosses + absorb_wiktionary + absorb_conceptnet_full (REMEDY for narrow-domain gap)",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 344.57,
+      "audit_elapsed_ms": 345.94
+    },
+    {
+      "chunk": "chunk_104",
+      "topic": "math formula gaps cure source target signal",
+      "what_chunk_built": "math_gap_analyzer + paradaxis_lm_v3 math cured",
+      "should_have_composed": "monadic_fix_loop (chunk_45) + UATM v5 + burden_symmetry_gate",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 339.14,
+      "audit_elapsed_ms": 340.74
+    },
+    {
+      "chunk": "chunk_105",
+      "topic": "dependency edge anchor refs starburst tech inventory",
+      "what_chunk_built": "dependency_loader_and_lost_tech_audit",
+      "should_have_composed": "starburst_tech_inventory_v1.py (already existed - I HAD to build it from scratch metaphor)",
+      "story_mode_tech_names_found": 16,
+      "tech_names_sample": [
+        "P vince logic functions object level associations by type relations not calls v1 0",
+        "P architecture loop integration layer to juxtaread to fmpack cartridge to shard pipeline v1 0",
+        "P meshai final corpus consolidation v1 0",
+        "chunk 29",
+        "chunk 28",
+        "chunk 48"
+      ],
+      "story_elapsed_ms": 347.86,
+      "audit_elapsed_ms": 351.14
+    }
+  ],
+  "dev_action_recipe": [
+    "1. For each chunk in per_chunk_audits, READ should_have_composed list",
+    "2. Verify those tech files exist (most do)",
+    "3. Emit supersession_record per chunk pointing to existing tech",
+    "4. Wire story_output_tech_extractor as pre-build gate (block new build if match exists)",
+    "5. Update vince_8 no_duplicate_authority enforcement to check tech inventory before any new chunk_build dir"
+  ],
+  "block_future_duplicates_recipe": "before building any primitive in chunk_NN_build/, run story_output_tech_extractor on intended topic; if doctrine_prose has hits, REFUSE the build and emit composition recipe pointing to existing tech."
+}

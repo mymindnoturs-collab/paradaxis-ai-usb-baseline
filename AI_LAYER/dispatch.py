@@ -1,11 +1,38 @@
-"""AI dispatch - composes chunk_90 swarm_via_filesystem. ~40 LOC."""
+"""AI dispatch - composes chunk_90 swarm_via_filesystem.
+
+Substrate resolver (chunk_98 / D3 fix): env var, ancestor walk to sibling
+PAIGOS_BAUT_USB_V1 on same drive root, fail loudly with remediation.
+"""
 import os
 import sys
 from pathlib import Path
 import importlib.util
 
-SUBSTRATE = Path(os.environ.get("PARADAXIS_SUBSTRATE",
-                               "F:/PAIGOS_BAUT_USB_V1"))
+
+def _resolve_substrate() -> Path:
+    env = os.environ.get("PARADAXIS_SUBSTRATE")
+    tried = []
+    if env:
+        p = Path(env)
+        tried.append(str(p))
+        if (p / "PRODUCTS" / "CPython.exe").exists():
+            return p
+    here = Path(__file__).resolve()
+    # Walk all ancestors -- handles AI_LAYER/dispatch.py, AI_LAYER/bundle.pyz/dispatch.py, etc.
+    for anc in here.parents:
+        sibling = anc / "PAIGOS_BAUT_USB_V1"
+        if sibling not in [Path(t) for t in tried]:
+            tried.append(str(sibling))
+            if (sibling / "PRODUCTS" / "CPython.exe").exists():
+                return sibling
+    raise RuntimeError(
+        "PARADAXIS_SUBSTRATE not resolvable. "
+        "Set env var to PAIGOS_BAUT_USB_V1 root, or place that drive on the "
+        "same root as this AI USB. Tried: " + " | ".join(tried)
+    )
+
+
+SUBSTRATE = _resolve_substrate()
 SWARM = SUBSTRATE / "ENGINE" / "drivers" / "_chunk_90_build" / "swarm_via_filesystem_v1.py"
 
 
@@ -40,6 +67,7 @@ if __name__ == "__main__":
         import json
         try:
             t = ai_dispatch("test_intent", {"msg": "hello AI"})
-            print(json.dumps({"self_test": True, "dispatched": str(t)}))
+            print(json.dumps({"self_test": True, "dispatched": str(t),
+                              "substrate_resolved": str(SUBSTRATE)}))
         except Exception as e:
             print(json.dumps({"self_test": False, "error": str(e)}))
